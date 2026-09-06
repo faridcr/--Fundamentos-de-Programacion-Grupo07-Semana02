@@ -10,5 +10,6 @@ porcentaje_descuento = float(input("Ingresa el porcentaje de descuento: "))
 precio_final = calcular_descuento(precio_original, porcentaje_descuento)
 ahorro = precio_original - precio_final
 
+print('========================')
 print(f"Precio final: {precio_final}")
 print(f"Ahorro obtenido: {ahorro}")

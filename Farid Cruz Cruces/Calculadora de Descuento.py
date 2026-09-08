@@ -25,9 +25,20 @@ while True:
     else:
         break
 
-precio_final = calcular_descuento(precio_original, porcentaje_descuento)
-ahorro = precio_original - precio_final
+def mostrar_resultado(nombre, notas):
+    prom, mn, mx = calcular_promedio(notas)
+    print("Reporte de:", nombre)
+    print("Notas:", notas)
+    print("Promedio:", prom)
+    print("Nota mínima:", mn)
+    print("Nota máxima:", mx)
 
+<<<<<<< HEAD
+
+# Probamos la función
+notas_al = [15, 12, 18, 10, 16]
+mostrar_resultado("Kevin", notas_al)
+=======
 print("-" * 40)
 print("           RESUMEN DE COMPRA")
 print("-" * 40)
@@ -38,3 +49,4 @@ print(f"  Precio final       : S/ {precio_final:.2f}")
 print("=" * 40)
 print("     ¡Gracias por tu compra!")
 print("=" * 40)
+>>>>>>> 27ead470bf32c681b63030b631441a2b253748fb

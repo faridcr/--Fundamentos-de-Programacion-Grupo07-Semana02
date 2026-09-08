@@ -1,14 +1,19 @@
-def calcular_descuento(precio, porcentaje):
-    descuento = precio * (porcentaje / 100)
-    precio_final = precio - descuento
-    return precio_final
+def calcular_promedio(notas):
+    promedio = sum(notas) / len(notas)
+    nota_min = min(notas)
+    nota_max = max(notas)
+    return promedio, nota_min, nota_max
 
-# Programa principal
-precio_original = float(input("Ingresa el precio original: "))
-porcentaje_descuento = float(input("Ingresa el porcentaje de descuento: "))
 
-precio_final = calcular_descuento(precio_original, porcentaje_descuento)
-ahorro = precio_original - precio_final
+def mostrar_resultado(nombre, notas):
+    prom, mn, mx = calcular_promedio(notas)
+    print("Reporte de:", nombre)
+    print("Notas:", notas)
+    print("Promedio:", prom)
+    print("Nota mínima:", mn)
+    print("Nota máxima:", mx)
 
-print(f"Precio final: {precio_final}")
-print(f"Ahorro obtenido: {ahorro}")
+
+# Probamos la función
+notas_al = [15, 12, 18, 10, 16]
+mostrar_resultado("Kevin", notas_al)

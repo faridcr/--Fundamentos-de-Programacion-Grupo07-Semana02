@@ -3,9 +3,9 @@ def calcular_descuento(precio, porcentaje):
     precio_final = precio - descuento
     return precio_final
 
-# Datos de ejemplo
-precio_original = 100
-porcentaje_descuento = 20
+# Pedimos los datos al usuario
+precio_original = float(input("Ingrese el precio original: "))
+porcentaje_descuento = float(input("Ingrese el porcentaje de descuento: "))
 
 # Llamamos a la función
 precio_final = calcular_descuento(precio_original, porcentaje_descuento)

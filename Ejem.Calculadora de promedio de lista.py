@@ -15,5 +15,5 @@ def mostrar_resultado(nombre, notas):
 
 
 # Probamos la función
-notas_alumno = [15, 12, 18, 10, 16]
+notas_alumno = [15, 20, 20, 10, 16]
 mostrar_resultado("Kevin", notas_alumno)

@@ -1,3 +1,5 @@
+#Calculadora de descuento de Farid
+
 def calcular_descuento(precio, porcentaje):
     descuento = precio * (porcentaje / 100)
     precio_final = precio - descuento
